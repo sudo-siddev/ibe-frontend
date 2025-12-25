@@ -1,0 +1,127 @@
+.container {
+  width: 100%;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .statsGrid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.statCard {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  text-align: center;
+}
+
+.averageRating {
+  margin-bottom: var(--spacing-md);
+}
+
+.ratingValue {
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  line-height: 1;
+  margin-bottom: var(--spacing-sm);
+}
+
+.starsContainer {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.starsContainer span {
+  font-size: var(--font-size-xl);
+  line-height: 1;
+}
+
+.starFilled {
+  color: #fbbf24;
+}
+
+.starHalf {
+  color: #fbbf24;
+  opacity: 0.5;
+}
+
+.starEmpty {
+  color: var(--color-border);
+}
+
+.totalReviews {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.distributionCard {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+}
+
+.distributionTitle {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.distributionList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.distributionItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.distributionLabel {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  font-weight: var(--font-weight-medium);
+}
+
+.distributionCount {
+  color: var(--color-text-secondary);
+}
+
+.distributionBar {
+  height: 8px;
+  background-color: var(--color-border);
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+}
+
+.distributionBarFill {
+  height: 100%;
+  width: var(--bar-width, 0%);
+  background-color: var(--color-primary);
+  transition: width var(--transition-base);
+}
+
+

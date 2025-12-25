@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background-color: #fef2f2;
+  border: 1px solid var(--color-error);
+  border-radius: var(--border-radius-md);
+  color: var(--color-error);
+}
+
+.icon {
+  font-size: var(--font-size-lg);
+  flex-shrink: 0;
+}
+
+.message {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+
+

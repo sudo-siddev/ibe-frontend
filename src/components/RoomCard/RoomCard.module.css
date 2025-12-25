@@ -1,0 +1,99 @@
+.card {
+  display: block;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.roomInfo {
+  flex: 1;
+}
+
+.roomNumber {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.ratingInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.starsContainer {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.starsContainer span {
+  font-size: var(--font-size-lg);
+  line-height: 1;
+}
+
+.starFilled {
+  color: #fbbf24;
+}
+
+.starHalf {
+  color: #fbbf24;
+  opacity: 0.5;
+}
+
+.starEmpty {
+  color: var(--color-border);
+}
+
+.ratingText {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+}
+
+.ratingValue {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+}
+
+.reviewsCount {
+  color: var(--color-text-secondary);
+}
+
+.noReviews {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.arrow {
+  font-size: var(--font-size-2xl);
+  color: var(--color-primary);
+  flex-shrink: 0;
+  transition: transform var(--transition-base);
+}
+
+.card:hover .arrow {
+  transform: translateX(4px);
+}
+
+
