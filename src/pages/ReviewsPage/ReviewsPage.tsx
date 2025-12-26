@@ -47,7 +47,7 @@ export const ReviewsPage = (): JSX.Element => {
   
   const { config, loading: configLoading, error: configError } =
     useReviewConfig(hotelId);
-  const { refetch: refetchReviews, setPage, page } = useReviews(roomId);
+  const { refetch: refetchReviews, setPage } = useReviews(roomId);
   const { refetch: refetchStats } = useReviewStats(roomId);
 
   const [showWriteForm, setShowWriteForm] = useState<boolean>(false);

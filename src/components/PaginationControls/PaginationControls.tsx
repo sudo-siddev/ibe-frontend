@@ -16,7 +16,7 @@ export const PaginationControls = ({
   last,
   onPageChange,
   loading = false,
-}: PaginationControlsProps): JSX.Element => {
+}: PaginationControlsProps): JSX.Element | null => {
   const handlePrevious = (): void => {
     if (!first && !loading) {
       onPageChange(currentPage - 1);

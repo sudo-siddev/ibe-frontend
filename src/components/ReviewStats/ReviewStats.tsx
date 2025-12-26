@@ -9,7 +9,7 @@ interface ReviewStatsProps {
   roomId: string;
 }
 
-export const ReviewStats = ({ roomId }: ReviewStatsProps): JSX.Element => {
+export const ReviewStats = ({ roomId }: ReviewStatsProps): JSX.Element | null => {
   const { stats, loading, error, refetch } = useReviewStats(roomId);
 
   if (loading) {

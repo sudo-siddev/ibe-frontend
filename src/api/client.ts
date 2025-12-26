@@ -1,6 +1,6 @@
 import axios, { AxiosError, AxiosInstance, InternalAxiosRequestConfig } from 'axios';
 import { getApiBaseUrl, getApiUsername, getApiPassword } from '../utils/config';
-import { classifyError, ErrorType, isNetworkOrServerError } from '../utils/errorClassification';
+import { classifyError, ErrorType } from '../utils/errorClassification';
 import { ApiError } from '../types';
 
 const createAxiosInstance = (): AxiosInstance => {

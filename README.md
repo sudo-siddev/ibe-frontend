@@ -9,7 +9,7 @@ React frontend application for the Review & Rating System component of the Inter
 npm install
 ```
 
-2. Create `.env` file:
+2. Create `.env` file (copy from `.env.example`):
 ```env
 VITE_API_BASE_URL=http://localhost:8080
 VITE_API_USERNAME=placeholder_user
@@ -23,11 +23,23 @@ npm run dev
 
 ## Build
 
+For production deployment to S3 + CloudFront:
+
+1. Create `.env.production` file with your production backend URL:
+```env
+VITE_API_BASE_URL=http://ibe-review-backend-env-v2.us-east-1.elasticbeanstalk.com
+VITE_API_USERNAME=your_production_username
+VITE_API_PASSWORD=your_production_password
+```
+
+2. Build the application:
 ```bash
 npm run build
 ```
 
-Output is in the `dist/` directory, ready for AWS S3 + CloudFront deployment.
+Output is in the `dist/` directory. Upload the contents to your S3 bucket and configure CloudFront distribution.
+
+**Note:** Environment variables are baked into the build at build time. Update `.env.production` and rebuild when backend URL changes.
 
 ## API Endpoints
 
